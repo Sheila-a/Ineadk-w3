@@ -1,1 +1,8 @@
- 
+body {
+  /* background: linear-gradient(to right, #ff9800 1%, #007bff 99%); */
+  /* background: linear-gradient(to right, #ff9800 10%, #4caf50 90%); */
+  /* background: linear-gradient(to right, #4caf50 10%, #007bff 90%); */
+  /* background: linear-gradient(105deg, #984d38 2%, #181e41 98%); */
+  background: linear-gradient(105deg, #181e41 20%, #671ae4 80%);
+  background-repeat: no-repeat;
+}
