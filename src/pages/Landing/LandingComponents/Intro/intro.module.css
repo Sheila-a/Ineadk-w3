@@ -1,0 +1,34 @@
+.Intro {
+  padding: 200px 7vw 0px 7vw;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+  border-bottom: 1px solid #ffffff2f;
+}
+
+.Intro h1 {
+  width: 78vw;
+  font-size: 80px;
+  color: #fff;
+  border-right: 1px solid #ffffff2f;
+}
+
+.Intro span {
+  display: block;
+  /* background: linear-gradient(to right, #671ae4 10%, #ff9800 90%); */
+  background: linear-gradient(30deg, #b65cff71 45%, #ff9800 10%);
+  /* background: linear-gradient(to bottom, #b75cff 10%, #671ae4 90%); */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.Intro p {
+  color: #e6e6eb;
+  width: 20vw;
+}
+.Intro img {
+  margin-left: 50px;
+  margin-right: 150px;
+}

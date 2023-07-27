@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 7vw;
+  border-bottom: 1px solid #ffffff57;
 }
 
 .Nav_container h1 {
@@ -44,6 +45,7 @@
 
 .dropdown > option {
   color: #666;
+  cursor: pointer;
 }
 .input::placeholder {
   color: #ffffff57;
@@ -52,6 +54,7 @@
 .dropdown {
   border-left: 1px solid #ffffff8e;
   padding-left: 7px;
+  cursor: pointer;
 }
 
 .icon {
@@ -59,7 +62,6 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  color: #666;
 }
 
 .SearchBar {

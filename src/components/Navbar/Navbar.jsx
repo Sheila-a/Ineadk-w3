@@ -2,6 +2,7 @@ import { useState } from 'react';
 import design from './navbar.module.css';
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const Navbar = () => {
   const [searchType, setSearchType] = useState('talents'); // Default search type is 'talents'
@@ -29,7 +30,7 @@ const Navbar = () => {
           <div className={design.Nav_inner_container}>
             <div className={design.SearchBar}>
               <div className={design.icon}>
-                <i className='fas fa-search'></i>
+                <SearchRoundedIcon sx={{ color: '#ffffff57' }} />
               </div>{' '}
               <input
                 type='text'
@@ -62,7 +63,6 @@ const Navbar = () => {
           </div>
         </div>
         <div className={design.BT}>
-          {/* <p>Login</p> */}
           <Link to='/login'>Login</Link>
           <Button content='Signup' />
         </div>
