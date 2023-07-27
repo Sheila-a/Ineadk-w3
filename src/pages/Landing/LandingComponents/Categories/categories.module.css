@@ -1,0 +1,85 @@
+.Categories {
+  padding: 50px 7vw;
+
+  border-bottom: 2px solid #ffffff2f;
+}
+
+.Categories h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.Categories_flex {
+  display: flex;
+  align-items: center;
+}
+
+.Categories_flex_item {
+  border: 1px solid #ffffff2f;
+  flex: 1;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.Categories_flex_item h3 {
+  padding: 20px 30px 0 30px;
+  margin-bottom: 10px;
+}
+
+.Categories_flex_item ul {
+  color: #e6e6ebd3;
+  padding: 0px 30px 40px 30px;
+}
+
+.Categories_flex_item ul > li {
+  padding-bottom: 10px;
+}
+
+.Jobs {
+  height: 420px;
+}
+
+.Jobs ul {
+  padding-bottom: 30px;
+}
+
+.Talents {
+  height: 400px;
+}
+
+.Talents ul {
+  padding-bottom: 55px;
+}
+
+.Categories_flex_item:hover {
+  background: #fff;
+  color: #4e1081;
+  transition: 0.4s ease;
+}
+
+.Categories_flex_item ul:hover {
+  color: #4e1081;
+}
+
+@media (max-width: 1287px) {
+  .Categories_flex {
+    align-items: stretch;
+  }
+
+  .Categories_flex_item {
+    height: 450px;
+  }
+
+  .Jobs ul,
+  .Talents ul,
+  .Companies ul {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 1256px) {
+  .Categories_flex {
+    flex-direction: column;
+  }
+}

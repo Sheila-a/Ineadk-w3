@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const Navbar = () => {
-  const [searchType, setSearchType] = useState('talents'); // Default search type is 'talents'
+  const [searchType, setSearchType] = useState('talents');
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchTypeChange = (event) => {
@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
         <div className={design.BT}>
           <Link to='/login'>Login</Link>
-          <Button content='Signup' />
+          <Button content='Signup' route='/sign-up' />
         </div>
       </div>
       <div className={design.Nav_inner_container2}>

@@ -1,0 +1,89 @@
+.Why {
+  padding: 60px 7vw;
+  border-bottom: 2px solid #ffffff2f;
+}
+
+.Why h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.Why h1 > span {
+  background: linear-gradient(to bottom, #b75cff 10%, #671ae4 90%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.Why_flex {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.Why_flex_item {
+  background-color: #fff;
+  min-width: 220px;
+  flex: 1;
+  height: 225px;
+  color: #4e1081;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.Why_flex_item h3 {
+  margin-bottom: 5px;
+  background-color: #4e1081;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 15px 5px;
+}
+
+.Why_flex_item p {
+  padding: 10px 15px;
+}
+
+.Why_flex_item:hover {
+  background-color: #b65cff8f;
+  color: #fff;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.Why_flex_button {
+  display: flex;
+  gap: 2vw;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.Summary {
+  color: #e6e6eb;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media (max-width: 1341px) {
+  .Why_flex {
+    gap: 2vw;
+  }
+}
+
+@media (max-width: 803px) {
+  .Why_flex_button {
+    flex-direction: column;
+    gap: 5vw;
+  }
+}
+
+@media (max-width: 523px) {
+  .Why_flex_item {
+    margin-bottom: 10px;
+  }
+}

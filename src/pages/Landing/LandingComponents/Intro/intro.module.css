@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   gap: 2vw;
-  border-bottom: 1px solid #ffffff2f;
+  border-bottom: 2px solid #ffffff2f;
 }
 
 .Intro h1 {
@@ -28,7 +28,89 @@
   color: #e6e6eb;
   width: 20vw;
 }
+
 .Intro img {
   margin-left: 50px;
   margin-right: 150px;
+}
+
+.rotateStar img {
+  animation: rotateStar 2s linear infinite;
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1287px) {
+  .Intro {
+    flex-direction: column;
+  }
+
+  .Intro h1 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-left: 1px solid #ffffff2f;
+    border-bottom: 1px solid #ffffff2f;
+  }
+
+  .Intro div,
+  .Intro p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Intro p {
+    font-size: 18px;
+  }
+
+  .Intro div {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 959px) {
+  .Intro h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 915px) {
+  .Intro {
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 734px) {
+  .Intro h1 {
+    font-size: 40px;
+  }
+
+  .Intro span {
+    display: block;
+    background: linear-gradient(30deg, #b65cff71 55%, #ff9800 10%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+@media (max-width: 636px) {
+  .Intro h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 542px) {
+  .Intro h1 {
+    display: none;
+  }
 }

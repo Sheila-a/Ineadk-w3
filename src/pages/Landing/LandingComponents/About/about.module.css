@@ -1,0 +1,39 @@
+.About {
+  padding: 50px 7vw;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  border-bottom: 2px solid #ffffff2f;
+}
+
+.About img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.About div {
+  width: 47vw;
+}
+
+.About h1 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.About p {
+  color: #e6e6eb;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 850px) {
+  .About {
+    flex-direction: column-reverse;
+  }
+
+  .About div {
+    width: 100%;
+    text-align: center;
+  }
+}
