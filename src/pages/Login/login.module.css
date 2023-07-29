@@ -61,3 +61,15 @@
     margin-bottom: 70px;
   }
 }
+
+@media (max-width: 500px) {
+  .login {
+    height: 100vh;
+    display: block;
+  }
+
+  .login_container {
+    height: 90vh;
+    margin: 5vh 10vw;
+  }
+}
