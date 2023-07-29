@@ -54,6 +54,7 @@
 @media (max-width: 700px) {
   .login_container {
     width: 80vw;
+    height: 70vw;
   }
 
   .first_p {
