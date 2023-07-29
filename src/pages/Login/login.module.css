@@ -69,7 +69,11 @@
   }
 
   .login_container {
-    height: 90vh;
-    margin: 5vh 10vw;
+    height: 80vh;
+    margin: 10vh 10vw;
+  }
+
+  .first_p {
+    margin-bottom: 200px;
   }
 }
