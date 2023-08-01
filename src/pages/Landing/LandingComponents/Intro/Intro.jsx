@@ -28,6 +28,7 @@ const Intro = () => {
         <Button
           content='Get Started'
           style={{ marginTop: '30px', width: '100%' }}
+          route='/role-selection'
         />
       </div>
     </div>

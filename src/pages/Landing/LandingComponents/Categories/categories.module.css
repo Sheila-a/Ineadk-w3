@@ -28,7 +28,7 @@
 }
 
 .Categories_flex_item ul {
-  color: #e6e6ebd3;
+  opacity: 0.9;
   padding: 0px 30px 40px 30px;
 }
 
@@ -52,14 +52,14 @@
   padding-bottom: 55px;
 }
 
+.Categories_flex_item ul:hover {
+  color: #4e1081;
+}
+
 .Categories_flex_item:hover {
   background: #fff;
   color: #4e1081;
   transition: 0.4s ease;
-}
-
-.Categories_flex_item ul:hover {
-  color: #4e1081;
 }
 
 @media (max-width: 1287px) {

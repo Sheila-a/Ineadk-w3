@@ -13,18 +13,6 @@ const Why = () => {
           data-aos='flip-left'
           data-aos-duration='1000'
         >
-          <h3>Unparalleled Freedom</h3>
-          <p>
-            Gig Nexus grants freelancers the freedom they deserve. Set your own
-            terms, rates, and work schedules to match your lifestyle. Embrace a
-            platform that respects your individuality and creative prowess.
-          </p>
-        </div>
-        <div
-          className={design.Why_flex_item}
-          data-aos='flip-left'
-          data-aos-duration='1000'
-        >
           <h3>Trust and Security</h3>
           <p>
             We place your trust at the core of our platform. Through
@@ -32,6 +20,19 @@ const Why = () => {
             and dispute resolution, leaving no room for uncertainties.
           </p>
         </div>
+        <div
+          className={design.Why_flex_item}
+          data-aos='flip-left'
+          data-aos-duration='1000'
+        >
+          <h3>Unparalleled Freedom</h3>
+          <p>
+            Gig Nexus grants freelancers the freedom they deserve. Set your own
+            terms, rates, and work schedules to match your lifestyle. Embrace a
+            platform that respects your individuality and creative prowess.
+          </p>
+        </div>
+
         <div
           className={design.Why_flex_item}
           data-aos='flip-left'
@@ -78,7 +79,11 @@ const Why = () => {
         a brighter future for all.
       </p>
       <div className={design.Why_flex_button}>
-        <Button content='Sign Up Now' style={{ width: '100%' }} />
+        <Button
+          content='Sign Up Now'
+          style={{ width: '100%' }}
+          route='/role-selection'
+        />
         <Button content='Find Projects' style={{ width: '100%' }} />
         <Button content='Contact Us' style={{ width: '100%' }} />
       </div>
