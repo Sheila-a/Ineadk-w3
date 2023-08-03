@@ -2,7 +2,6 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  /* background: #fff; */
   background: linear-gradient(105deg, #181e41 20%, #671ae4 80%);
   background-repeat: no-repeat;
 }
@@ -27,8 +26,9 @@
 }
 
 .Nav_container span {
-  background: linear-gradient(to bottom, #b75cff 10%, #671ae4 90%);
+  /* background: linear-gradient(to bottom, #b75cff 10%, #671ae4 90%); */
   color: transparent;
+  background: linear-gradient(to bottom, #b75cff 10%, #ff9800 90%);
   background-clip: text;
   -webkit-background-clip: text;
 }
