@@ -1,0 +1,134 @@
+.Sidebar_wrapper {
+  width: 20%;
+  padding: 10px 0px 0 20px;
+  /* background: #671ae4; */
+  transition: width 0.3s ease;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.shrunk {
+  width: 80px;
+}
+
+.SideLogo {
+  margin-bottom: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 45px;
+  color: #fff;
+}
+
+.SideLogo span {
+  background: linear-gradient(to bottom, #b75cff 10%, #ff9800 90%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.Sidebar_img_wrapper {
+  width: 100%;
+  height: 88px;
+  border-bottom: 1px solid #d0d5dd;
+  margin-bottom: 40px;
+}
+
+.Sidebar_img {
+  padding-bottom: 5px;
+}
+
+.Sidebar_tabs {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+}
+
+.Sidebar_tabs h3 {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.Sidebar_tabs_inner {
+  display: flex;
+  align-items: center;
+}
+
+.Sidebar_tabs:hover {
+  transition: 0.4s ease;
+  color: #fcfcfc75;
+}
+
+.close {
+  cursor: pointer;
+  margin-bottom: 96px;
+  transition: 0.4s ease;
+}
+
+@media (max-width: 1200px) {
+  .SideLogo {
+    font-size: 35px;
+  }
+
+  .close {
+    margin-bottom: 80.5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Sidebar_tabs {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .SideLogo {
+    font-size: 30px;
+  }
+
+  .close {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 900px) {
+  .SideLogo {
+    font-size: 25px;
+  }
+
+  .Sidebar_tabs h3 {
+    font-size: 15px;
+  }
+
+  .close {
+    margin-bottom: 69px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Sidebar_wrapper {
+    /* Change width and position properties to make the sidebar lay on top of the dashboard */
+    /* width: 10%; */
+    position: absolute;
+    /* width: 200px; */
+    z-index: 1; /* Make sure the sidebar is on top of the dashboard */
+    top: 0;
+    left: 0;
+    background: linear-gradient(105deg, #181e41 20%, #671ae4 80%);
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    transition: left 0.3s ease; /* Add transition to make it slide in and out */
+
+    /* When the sidebar is shrunken, adjust the left property to show/hide the sidebar */
+    &.shrunk {
+      /* left: -80px; */
+    }
+  }
+}

@@ -2,11 +2,10 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Landing } from './pages/Landing/Landing';
 import Login from './pages/Login/Login';
-import Dashboard from './pages/Dashboard/Dashboard';
 import RoleSelection from './pages/Signup/RoleSelection';
 import FreelancerSignUp from './pages/Signup/FreelanceS';
 import CompanySignUp from './pages/Signup/CompanyS';
-
+import Dashboard from './pages/Dashboard/Freelancer/Dashboard';
 function App() {
   return (
     <Routes>
