@@ -18,7 +18,8 @@ const About = () => {
         <Button
           content='Get Started'
           style={{ marginTop: '30px', width: '100%' }}
-          route='/role-selection'
+          // route='/role-selection'
+          route='/dashboard'
         />
       </div>
       <div data-aos='zoom-in' data-aos-duration='1000'>
