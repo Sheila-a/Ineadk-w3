@@ -107,6 +107,8 @@ const Sidebar = () => {
     transition: '.5s ease',
   };
 
+  const isMobileView = window.innerWidth <= 450;
+
   return (
     <div
       className={`${design.Sidebar_wrapper} ${
@@ -150,7 +152,9 @@ const Sidebar = () => {
             >
               {' '}
               <div className={design.Sidebar_tabs_inner}>
-                <HomeWorkOutlinedIcon />
+                <HomeWorkOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
 
                 {isExpanded && <h3>Home</h3>}
               </div>
