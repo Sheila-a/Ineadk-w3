@@ -111,24 +111,17 @@
     margin-bottom: 69px;
   }
 }
+
 @media (max-width: 450px) {
   .Sidebar_tabs {
     padding: 15px 10px;
   }
 
-  .testIco {
-    font-size: 20px;
+  .Sidebar_wrapper {
+    padding-left: 10px;
+  }
+
+  .close {
+    padding-left: 10px;
   }
 }
-
-/* @media (max-width: 700px) {
-  .Sidebar_wrapper { 
-    position: absolute; 
-    z-index: 1; 
-    top: 0;
-    left: 0;
-    background: linear-gradient(105deg, #181e41 20%, #671ae4 80%);
-    background-repeat: no-repeat; 
-    transition: left 0.3s ease;  
-  }
-} */
