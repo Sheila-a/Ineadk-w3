@@ -168,7 +168,9 @@ const Sidebar = () => {
             >
               <div className={design.Sidebar_tabs_inner}>
                 {/* <img src={Profile} /> */}
-                <AccountTreeOutlinedIcon />
+                <AccountTreeOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Projects</h3>}
               </div>
             </Link>
@@ -180,7 +182,9 @@ const Sidebar = () => {
               style={activeItem === 'courses' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
-                <ChatOutlinedIcon />
+                <ChatOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Messages</h3>}
               </div>{' '}
             </Link>
@@ -192,7 +196,9 @@ const Sidebar = () => {
               style={activeItem === 'teams' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
-                <AccountCircleOutlinedIcon />
+                <AccountCircleOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Profile</h3>}
               </div>{' '}
             </Link>
@@ -204,7 +210,9 @@ const Sidebar = () => {
               style={activeItem === 'meeting' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
-                <ContactSupportOutlinedIcon />
+                <ContactSupportOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Support</h3>}
               </div>{' '}
             </Link>
@@ -216,7 +224,9 @@ const Sidebar = () => {
               style={activeItem === 'students' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
-                <MonetizationOnOutlinedIcon />
+                <MonetizationOnOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Earnings</h3>}
               </div>{' '}
             </Link>
@@ -228,13 +238,17 @@ const Sidebar = () => {
               style={activeItem === 'certificate' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
-                <SettingsSuggestOutlinedIcon />
+                <SettingsSuggestOutlinedIcon
+                  style={{ fontSize: isMobileView ? '40px' : '24px' }}
+                />
                 {isExpanded && <h3>Settings</h3>}
               </div>
             </Link>
           </div>
           <div className={design.Sidebar_tabs} onClick={handleLogout}>
-            <LogoutOutlinedIcon />
+            <LogoutOutlinedIcon
+              style={{ fontSize: isMobileView ? '40px' : '24px' }}
+            />
             {isExpanded && <h3>Log out</h3>}
           </div>
         </div>
