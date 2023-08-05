@@ -46,4 +46,12 @@
   .dash_lower {
     flex-direction: column;
   }
+
+  .dashboard_main {
+    padding: 20px;
+  }
+
+  .dash_intro {
+    padding: 20px;
+  }
 }
