@@ -4,16 +4,15 @@ import {
   // useNavigate
 } from 'react-router-dom';
 import design from './dashboard.module.css';
-import MetaBtn from '../../../components/Button/MetaBtn';
-import Sidebar from '../../../layout/Sidebar/Sidebar';
-import DashCard from '../../../components/DashCard/DashCard';
-import dols from '../../../assets/dollar.png';
-// import success from '../../../assets/success.png';
-import success from '../../../assets/activity.png';
-import rating from '../../../assets/rating.png';
-import project from '../../../assets/project.png';
-import client from '../../../assets/client.png';
-import Deadline from '../../../components/Deadline/Deadline';
+import MetaBtn from '../../../../components/Button/MetaBtn';
+import Sidebar from '../../../../layout/Sidebar/Sidebar';
+import DashCard from '../../../../components/DashCard/DashCard';
+import dols from '../../../../assets/dollar.png';
+import success from '../../../../assets/activity.png';
+import rating from '../../../../assets/rating.png';
+import project from '../../../../assets/project.png';
+import client from '../../../../assets/client.png';
+import Deadline from '../../../../components/Deadline/Deadline';
 
 const Dashboard = () => {
   //   const navigate = useNavigate();

@@ -40,4 +40,8 @@
   .Deadline {
     width: 100% !important;
   }
+
+  .Deadline h4 {
+    font-size: 24px;
+  }
 }

@@ -5,7 +5,7 @@ import Login from './pages/Login/Login';
 import RoleSelection from './pages/Signup/RoleSelection';
 import FreelancerSignUp from './pages/Signup/FreelanceS';
 import CompanySignUp from './pages/Signup/CompanyS';
-import Dashboard from './pages/Dashboard/Freelancer/Dashboard';
+import Dashboard from './pages/Dashboard/Freelancer/Home/Dashboard';
 import Footer from './components/Footer/Footer';
 function App() {
   return (

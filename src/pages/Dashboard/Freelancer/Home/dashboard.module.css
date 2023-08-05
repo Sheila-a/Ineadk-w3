@@ -54,4 +54,12 @@
   .dash_intro {
     padding: 20px;
   }
+
+  .dash_intro h3 {
+    font-size: 23px;
+  }
+
+  .dash_intro p {
+    font-size: 18px;
+  }
 }
