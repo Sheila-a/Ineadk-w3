@@ -18,6 +18,7 @@ const Sidebar = () => {
   };
   const [activeItem, setActiveItem] = useState('');
   const [isExpanded, setIsExpanded] = useState(true);
+  const [isPermanent, setIsPermanent] = useState(false);
   const location = useLocation();
 
   //Logout Functionality
@@ -29,8 +30,37 @@ const Sidebar = () => {
 
   // sidebar expansion
   const toggleSidebar = () => {
+    if (window.innerWidth <= 700) {
+      setIsPermanent(true);
+      return;
+    }
     setIsExpanded(!isExpanded);
   };
+
+  // useEffect(() => {
+  //   if (window.innerWidth <= 700) {
+  //     setIsPermanent(true);
+  //   } else {
+  //     setIsPermanent(false);
+  //   }
+  // }, []);
+
+  // Listen for window resize events to update isExpanded and isPermanentShrunk states when the width changes
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 700) {
+        setIsExpanded(false); // Always set isExpanded to false if width is 700px or lower
+        setIsPermanent(true); // Set isPermanentShrunk to true when the width is 700px or lower
+      } else {
+        setIsPermanent(false); // Set isPermanentShrunk to false when the width is larger than 700px
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   // update activeItem based on current location
   useEffect(() => {
@@ -79,7 +109,9 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`${design.Sidebar_wrapper} ${isExpanded ? '' : design.shrunk}`}
+      className={`${design.Sidebar_wrapper} ${
+        isExpanded ? '' : design.shrunk
+      } ${isPermanent && 'permanent '}`}
     >
       {' '}
       {isExpanded ? (

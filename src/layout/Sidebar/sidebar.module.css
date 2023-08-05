@@ -112,23 +112,14 @@
   }
 }
 
-@media (max-width: 700px) {
-  .Sidebar_wrapper {
-    /* Change width and position properties to make the sidebar lay on top of the dashboard */
-    /* width: 10%; */
-    position: absolute;
-    /* width: 200px; */
-    z-index: 1; /* Make sure the sidebar is on top of the dashboard */
+/* @media (max-width: 700px) {
+  .Sidebar_wrapper { 
+    position: absolute; 
+    z-index: 1; 
     top: 0;
     left: 0;
     background: linear-gradient(105deg, #181e41 20%, #671ae4 80%);
-    background-repeat: no-repeat;
-    /* height: 100%; */
-    transition: left 0.3s ease; /* Add transition to make it slide in and out */
-
-    /* When the sidebar is shrunken, adjust the left property to show/hide the sidebar */
-    &.shrunk {
-      /* left: -80px; */
-    }
+    background-repeat: no-repeat; 
+    transition: left 0.3s ease;  
   }
-}
+} */
