@@ -37,22 +37,14 @@ const Sidebar = () => {
     setIsExpanded(!isExpanded);
   };
 
-  // useEffect(() => {
-  //   if (window.innerWidth <= 700) {
-  //     setIsPermanent(true);
-  //   } else {
-  //     setIsPermanent(false);
-  //   }
-  // }, []);
-
-  // Listen for window resize events to update isExpanded and isPermanentShrunk states when the width changes
+  // Listen for window resize events to update isExpanded and isPermanent  states when the width changes
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 700) {
         setIsExpanded(false); // Always set isExpanded to false if width is 700px or lower
-        setIsPermanent(true); // Set isPermanentShrunk to true when the width is 700px or lower
+        setIsPermanent(true); // Set isPermanent  to true when the width is 700px or lower
       } else {
-        setIsPermanent(false); // Set isPermanentShrunk to false when the width is larger than 700px
+        setIsPermanent(false); // Set isPermanent to false when the width is larger than 700px
       }
     };
 
@@ -73,26 +65,6 @@ const Sidebar = () => {
       location.pathname.startsWith('/courses')
     ) {
       setActiveItem('courses');
-    } else if (location.pathname === '/teams') {
-      setActiveItem('teams');
-    } else if (location.pathname === '/meeting') {
-      setActiveItem('meeting');
-    } else if (
-      location.pathname === '/students' ||
-      location.pathname.startsWith('/student-details/')
-    ) {
-      setActiveItem('students');
-    } else if (
-      location.pathname === '/certificate' ||
-      location.pathname.startsWith('/certificate')
-    ) {
-      setActiveItem('certificate');
-    } else if (location.pathname === '/chat') {
-      setActiveItem('chat');
-    } else if (location.pathname === '/profile') {
-      setActiveItem('profile');
-    } else if (location.pathname === '/settings') {
-      setActiveItem('settings');
     }
   }, [location]);
 

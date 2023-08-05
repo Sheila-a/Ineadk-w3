@@ -1,0 +1,33 @@
+.DashCard_img {
+  /* height: 50%; */
+  margin: auto 0;
+  padding-left: 2vh;
+  object-fit: cover;
+  width: 60px;
+}
+
+.info {
+  padding: 10px 10px 10px 0;
+  /* padding-right: 8vh; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vh;
+  /* align-items: center; */
+}
+
+.info h5 {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.info p {
+  margin-top: 0;
+  text-align: left;
+  font-size: 15px;
+}
+
+@media (max-width: 1075px) {
+  .info {
+    margin-left: 5vh;
+  }
+}

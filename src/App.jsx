@@ -6,16 +6,20 @@ import RoleSelection from './pages/Signup/RoleSelection';
 import FreelancerSignUp from './pages/Signup/FreelanceS';
 import CompanySignUp from './pages/Signup/CompanyS';
 import Dashboard from './pages/Dashboard/Freelancer/Dashboard';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Landing />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/role-selection' element={<RoleSelection />} />
-      <Route path='/signup/freelancer' element={<FreelancerSignUp />} />
-      <Route path='/signup/company' element={<CompanySignUp />} />
-      <Route path='/dashboard' element={<Dashboard />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/role-selection' element={<RoleSelection />} />
+        <Route path='/signup/freelancer' element={<FreelancerSignUp />} />
+        <Route path='/signup/company' element={<CompanySignUp />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

@@ -1,4 +1,3 @@
-import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import About from './LandingComponents/About/About';
 import Categories from './LandingComponents/Categories/Categories';
@@ -13,7 +12,6 @@ export const Landing = () => {
       <About />
       <Why />
       <Categories />
-      <Footer />
     </div>
   );
 };
