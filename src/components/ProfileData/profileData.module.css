@@ -1,0 +1,25 @@
+.ProfileData {
+  background: #fffefeea;
+  /* color: #671ae4; */
+  color: #181e41d7;
+  border-radius: 10px;
+  padding: 30px 20px 20px 20px;
+  margin-top: 30px;
+}
+
+.ProfileData h3 {
+  margin-bottom: 15px;
+}
+
+.ProfileData_p {
+  margin-bottom: 20px;
+  color: #181e41;
+}
+
+.ProfileDetails {
+  margin-bottom: 20px;
+}
+
+.ProfileDetails h4 {
+  color: #671ae4d2;
+}

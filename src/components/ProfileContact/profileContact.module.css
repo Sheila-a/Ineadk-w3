@@ -1,0 +1,60 @@
+.ContactCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ContactCard_ico_cont {
+  background: #671ae459;
+  /* background: #671ae47a; */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.ProfileContact {
+  background: #fffefeea;
+  /* color: #671ae4; */
+  color: #181e41;
+  border-radius: 10px;
+  padding: 30px 20px 30px 20px;
+  margin-top: 30px;
+}
+
+.ProfileContact_inner,
+.ProfileContact_inner2 {
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+}
+
+.ProfileContact_inner2 {
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.ContactCard_less {
+  color: #181e41d7;
+  font-size: 14px;
+}
+.ProfileContact_inner {
+  margin-bottom: 70px;
+}
+
+.ProfileContact_inner2 a {
+  text-decoration: none;
+  color: inherit;
+  /* display: inline-block;
+  white-space: normal;
+  max-width: 80px; */
+}
+
+@media (max-width: 900px) {
+  .ProfileContact_inner,
+  .ProfileContact_inner2 {
+    flex-direction: column;
+  }
+}

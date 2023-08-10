@@ -1,5 +1,7 @@
 import DashNav from '../../../../components/DashNav/DashNav';
 import ProfileCard from '../../../../components/ProfileCard/ProfileCard';
+import ProfileContact from '../../../../components/ProfileContact/ProfileContact';
+import ProfileData from '../../../../components/ProfileData/ProfileData';
 import Sidebar from '../../../../layout/Sidebar/Sidebar';
 import design from './profile.module.css';
 
@@ -12,6 +14,8 @@ const Profile = () => {
           <DashNav title='PROFILE' />
           <div className={design.Profile_inner}>
             <ProfileCard />
+            <ProfileData />
+            <ProfileContact />
           </div>
         </div>
       </div>

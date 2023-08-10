@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Sidebar from '../../../../layout/Sidebar/Sidebar';
 import MetaBtn from '../../../../components/Button/MetaBtn';
 import design from './message.module.css';
+import DashNav from '../../../../components/DashNav/DashNav';
 
 const Message = () => {
   const [messages, setMessages] = useState([]);
@@ -84,54 +85,56 @@ const Message = () => {
       <div className={design.project_body}>
         <Sidebar />
         <div className={design.project_main}>
-          <div>
-            <h2>Talk to one of our talented IT Support staff</h2>
-            <p>
-              You can decide to talk to a company representative online or to{' '}
-            </p>
-          </div>
-          <div
-            className={design.chat_container}
-            //   style={showChatContainer()}
-          >
-            <div className={design.chat_messages} ref={chatContainerRef}>
-              {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={`${design.message} ${
-                    message.sender === 'user'
-                      ? design.user_message
-                      : design.bot_message
-                  }`}
-                >
-                  {/* <div className='message-content>*/}
-                  {message.text}
-                  {/* </div> */}
-                </div>
-              ))}
+          <DashNav title='MESSAGES' />
+          <div className={design.Message_inner}>
+            <div>
+              <h2>Talk to one of our talented IT Support staff</h2>
+              <p>
+                You can decide to talk to a company representative online or to{' '}
+              </p>
             </div>
-            <div className={design.input_container}>
-              <input
-                type='text'
-                value={newMessage}
-                onChange={handleInputChange}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter') {
-                    handleSendMessage();
-                  }
-                }}
-                className={design.input}
-                placeholder='Type your message...'
-              />
+            <div
+              className={design.chat_container}
+              //   style={showChatContainer()}
+            >
+              <div className={design.chat_messages} ref={chatContainerRef}>
+                {messages.map((message, index) => (
+                  <div
+                    key={index}
+                    className={`${design.message} ${
+                      message.sender === 'user'
+                        ? design.user_message
+                        : design.bot_message
+                    }`}
+                  >
+                    {/* <div className='message-content>*/}
+                    {message.text}
+                    {/* </div> */}
+                  </div>
+                ))}
+              </div>
+              <div className={design.input_container}>
+                <input
+                  type='text'
+                  value={newMessage}
+                  onChange={handleInputChange}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                      handleSendMessage();
+                    }
+                  }}
+                  className={design.input}
+                  placeholder='Type your message...'
+                />
 
-              <MetaBtn
-                content='Send'
-                onClick={handleSendMessage}
-                style={{ width: '30%', borderRadius: '0 5px 5px 0' }}
-              />
-            </div>
-          </div>{' '}
-          {/* <select
+                <MetaBtn
+                  content='Send'
+                  onClick={handleSendMessage}
+                  style={{ width: '30%', borderRadius: '0 5px 5px 0' }}
+                />
+              </div>
+            </div>{' '}
+            {/* <select
             name='person'
             id='person'
             onChange={handlePersonSelect}
@@ -140,6 +143,7 @@ const Message = () => {
             <option value='IT personnel'>IT personnel</option>
             <option value='Company'>Company</option>
           </select> */}
+          </div>
         </div>
       </div>
     </div>
