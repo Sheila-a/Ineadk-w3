@@ -1,0 +1,351 @@
+[{
+  "id": 1,
+  "companyName": "Marble Corporation",
+  "companyEmail": null,
+  "prize": 40,
+  "jobTitle": "Project Manager",
+  "duration": 53
+}, {
+  "id": 2,
+  "companyName": "Acme Corporation",
+  "companyEmail": null,
+  "prize": 20,
+  "jobTitle": "Sales Representative",
+  "duration": 34
+}, {
+  "id": 3,
+  "companyName": "Titanium Corporation",
+  "companyEmail": null,
+  "prize": 44,
+  "jobTitle": "Social Media Manager",
+  "duration": 4
+}, {
+  "id": 4,
+  "companyName": "Redwood Corporation",
+  "companyEmail": null,
+  "prize": 34,
+  "jobTitle": "Business Development Manager",
+  "duration": 45
+}, {
+  "id": 5,
+  "companyName": "Silverstone Group",
+  "companyEmail": null,
+  "prize": 34,
+  "jobTitle": "Content Writer",
+  "duration": 12
+}, {
+  "id": 6,
+  "companyName": "Crimson Technologies",
+  "companyEmail": null,
+  "prize": 45,
+  "jobTitle": "Financial Analyst",
+  "duration": 49
+}, {
+  "id": 7,
+  "companyName": "Golden Gate Holdings",
+  "companyEmail": null,
+  "prize": 48,
+  "jobTitle": "Customer Service Representative",
+  "duration": 32
+}, {
+  "id": 8,
+  "companyName": "Topaz Corporation",
+  "companyEmail": null,
+  "prize": 31,
+  "jobTitle": "Data Analyst",
+  "duration": 12
+}, {
+  "id": 9,
+  "companyName": "XYZ Industries",
+  "companyEmail": null,
+  "prize": 42,
+  "jobTitle": "Human Resources Specialist",
+  "duration": 60
+}, {
+  "id": 10,
+  "companyName": "Ruby Red",
+  "companyEmail": null,
+  "prize": 44,
+  "jobTitle": "Customer Service Representative",
+  "duration": 26
+}, {
+  "id": 11,
+  "companyName": "Platinum Solutions",
+  "companyEmail": null,
+  "prize": 34,
+  "jobTitle": "Human Resources Specialist",
+  "duration": 12
+}, {
+  "id": 12,
+  "companyName": "Onyx Innovations",
+  "companyEmail": null,
+  "prize": 25,
+  "jobTitle": "Operations Manager",
+  "duration": 35
+}, {
+  "id": 13,
+  "companyName": "Silverstone Group",
+  "companyEmail": null,
+  "prize": 47,
+  "jobTitle": "Marketing Manager",
+  "duration": 29
+}, {
+  "id": 14,
+  "companyName": "Jade Ventures",
+  "companyEmail": null,
+  "prize": 29,
+  "jobTitle": "Content Writer",
+  "duration": 5
+}, {
+  "id": 15,
+  "companyName": "Sapphire Blue",
+  "companyEmail": null,
+  "prize": 35,
+  "jobTitle": "Human Resources Specialist",
+  "duration": 35
+}, {
+  "id": 16,
+  "companyName": "Emerald Enterprises",
+  "companyEmail": null,
+  "prize": 33,
+  "jobTitle": "IT Support Specialist",
+  "duration": 4
+}, {
+  "id": 17,
+  "companyName": "Amethyst Purple",
+  "companyEmail": null,
+  "prize": 15,
+  "jobTitle": "Customer Service Representative",
+  "duration": 40
+}, {
+  "id": 18,
+  "companyName": "Sunset Solutions",
+  "companyEmail": null,
+  "prize": 35,
+  "jobTitle": "Customer Service Representative",
+  "duration": 14
+}, {
+  "id": 19,
+  "companyName": "Cobalt Enterprises",
+  "companyEmail": null,
+  "prize": 47,
+  "jobTitle": "Graphic Designer",
+  "duration": 53
+}, {
+  "id": 20,
+  "companyName": "Summit Solutions",
+  "companyEmail": null,
+  "prize": 31,
+  "jobTitle": "Sales Representative",
+  "duration": 17
+}, {
+  "id": 21,
+  "companyName": "Indigo Investments",
+  "companyEmail": null,
+  "prize": 29,
+  "jobTitle": "UX/UI Designer",
+  "duration": 29
+}, {
+  "id": 22,
+  "companyName": "Amethyst Purple",
+  "companyEmail": null,
+  "prize": 44,
+  "jobTitle": "Human Resources Specialist",
+  "duration": 46
+}, {
+  "id": 23,
+  "companyName": "Cobalt Enterprises",
+  "companyEmail": null,
+  "prize": 32,
+  "jobTitle": "Marketing Manager",
+  "duration": 38
+}, {
+  "id": 24,
+  "companyName": "Ruby Enterprises",
+  "companyEmail": null,
+  "prize": 45,
+  "jobTitle": "Graphic Designer",
+  "duration": 4
+}, {
+  "id": 25,
+  "companyName": "Ruby Red",
+  "companyEmail": null,
+  "prize": 35,
+  "jobTitle": "Financial Analyst",
+  "duration": 58
+}, {
+  "id": 26,
+  "companyName": "Cobalt Enterprises",
+  "companyEmail": null,
+  "prize": 28,
+  "jobTitle": "Backend Engineer",
+  "duration": 36
+}, {
+  "id": 27,
+  "companyName": "Starlight Innovations",
+  "companyEmail": null,
+  "prize": 25,
+  "jobTitle": "Operations Manager",
+  "duration": 51
+}, {
+  "id": 28,
+  "companyName": "Gold Coast",
+  "companyEmail": null,
+  "prize": 43,
+  "jobTitle": "Quality Assurance Analyst",
+  "duration": 7
+}, {
+  "id": 29,
+  "companyName": "Platinum Solutions",
+  "companyEmail": null,
+  "prize": 23,
+  "jobTitle": "Financial Analyst",
+  "duration": 49
+}, {
+  "id": 30,
+  "companyName": "Coral Orange",
+  "companyEmail": null,
+  "prize": 47,
+  "jobTitle": "Accountant",
+  "duration": 25
+}, {
+  "id": 31,
+  "companyName": "Emerald Enterprises",
+  "companyEmail": null,
+  "prize": 23,
+  "jobTitle": "Quality Assurance Analyst",
+  "duration": 16
+}, {
+  "id": 32,
+  "companyName": "Silverstone Group",
+  "companyEmail": null,
+  "prize": 32,
+  "jobTitle": "Human Resources Specialist",
+  "duration": 55
+}, {
+  "id": 33,
+  "companyName": "Titanium Corporation",
+  "companyEmail": null,
+  "prize": 19,
+  "jobTitle": "Backend Engineer",
+  "duration": 42
+}, {
+  "id": 34,
+  "companyName": "Bronze Holdings",
+  "companyEmail": null,
+  "prize": 25,
+  "jobTitle": "UX/UI Designer",
+  "duration": 51
+}, {
+  "id": 35,
+  "companyName": "Granite Solutions",
+  "companyEmail": null,
+  "prize": 17,
+  "jobTitle": "UX/UI Designer",
+  "duration": 50
+}, {
+  "id": 36,
+  "companyName": "Global Enterprises",
+  "companyEmail": null,
+  "prize": 28,
+  "jobTitle": "Social Media Manager",
+  "duration": 12
+}, {
+  "id": 37,
+  "companyName": "Graphite Technologies",
+  "companyEmail": null,
+  "prize": 31,
+  "jobTitle": "Administrative Assistant",
+  "duration": 54
+}, {
+  "id": 38,
+  "companyName": "Acme Corporation",
+  "companyEmail": null,
+  "prize": 35,
+  "jobTitle": "Data Analyst",
+  "duration": 52
+}, {
+  "id": 39,
+  "companyName": "Ruby Enterprises",
+  "companyEmail": null,
+  "prize": 47,
+  "jobTitle": "Administrative Assistant",
+  "duration": 20
+}, {
+  "id": 40,
+  "companyName": "Emerald Green",
+  "companyEmail": null,
+  "prize": 19,
+  "jobTitle": "Data Analyst",
+  "duration": 15
+}, {
+  "id": 41,
+  "companyName": "Pearl Holdings",
+  "companyEmail": null,
+  "prize": 37,
+  "jobTitle": "Customer Service Representative",
+  "duration": 26
+}, {
+  "id": 42,
+  "companyName": "Marble Corporation",
+  "companyEmail": null,
+  "prize": 23,
+  "jobTitle": "IT Support Specialist",
+  "duration": 59
+}, {
+  "id": 43,
+  "companyName": "Pearl White",
+  "companyEmail": null,
+  "prize": 23,
+  "jobTitle": "Financial Analyst",
+  "duration": 50
+}, {
+  "id": 44,
+  "companyName": "Graphite Technologies",
+  "companyEmail": null,
+  "prize": 40,
+  "jobTitle": "Marketing Manager",
+  "duration": 5
+}, {
+  "id": 45,
+  "companyName": "Pearl White",
+  "companyEmail": null,
+  "prize": 37,
+  "jobTitle": "UX/UI Designer",
+  "duration": 27
+}, {
+  "id": 46,
+  "companyName": "Sapphire Blue",
+  "companyEmail": null,
+  "prize": 46,
+  "jobTitle": "Product Manager",
+  "duration": 31
+}, {
+  "id": 47,
+  "companyName": "Emerald Enterprises",
+  "companyEmail": null,
+  "prize": 32,
+  "jobTitle": "Financial Analyst",
+  "duration": 6
+}, {
+  "id": 48,
+  "companyName": "Diamond Enterprises",
+  "companyEmail": null,
+  "prize": 39,
+  "jobTitle": "Data Analyst",
+  "duration": 43
+}, {
+  "id": 49,
+  "companyName": "Violet Ventures",
+  "companyEmail": null,
+  "prize": 23,
+  "jobTitle": "Financial Analyst",
+  "duration": 22
+}, {
+  "id": 50,
+  "companyName": "Pearl Holdings",
+  "companyEmail": null,
+  "prize": 28,
+  "jobTitle": "Accountant",
+  "duration": 48
+}]

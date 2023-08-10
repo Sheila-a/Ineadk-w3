@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import design from './login.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useRole } from '../../context/RoleContext';
 import { useEffect, useState } from 'react';
 import MetaBtn from '../../components/Button/MetaBtn';
 
 const Login = () => {
+  const { role } = useRole();
   const navigate = useNavigate();
   const [isMetaMaskInstalled, setIsMetaMaskInstalled] = useState(false);
 
@@ -20,7 +22,7 @@ const Login = () => {
         if (accounts.length > 0) {
           setIsMetaMaskInstalled(true);
 
-          navigate(`/dashboard?address=${accounts[0]}`);
+          navigate(`/${role}dashboard?address=${accounts[0]}`);
         } else {
           alert('Please connect MetaMask to continue.');
         }

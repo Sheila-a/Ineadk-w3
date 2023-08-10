@@ -58,22 +58,35 @@ const Sidebar = () => {
   useEffect(() => {
     if (location.pathname === '/dashboard') {
       setActiveItem('dashboard');
-    } else if (location.pathname === '/announcement') {
-      setActiveItem('announcement');
-    } else if (
-      location.pathname === '/courses' ||
-      location.pathname.startsWith('/courses')
-    ) {
-      setActiveItem('courses');
+    } else if (location.pathname === '/projects') {
+      setActiveItem('projects');
+    } else if (location.pathname === '/message') {
+      setActiveItem('message');
+    } else if (location.pathname === '/profile') {
+      setActiveItem('profile');
+    } else if (location.pathname === '/support') {
+      setActiveItem('support');
+    } else if (location.pathname === '/earnings') {
+      setActiveItem('earnings');
+    } else if (location.pathname === '/settings') {
+      setActiveItem('settings');
     }
   }, [location]);
 
   // define active and inactive colors
   const activeBackgroundColor = '#671ae4';
+  const activeBackgroundColor2 = '#501bb4';
 
   // set style for active link
   const activeLinkStyle = {
     backgroundColor: activeBackgroundColor,
+    textDecoration: 'none',
+    color: '#fff',
+    transition: '.5s ease',
+  };
+
+  const activeLinkStyle2 = {
+    backgroundColor: activeBackgroundColor2,
     textDecoration: 'none',
     color: '#fff',
     transition: '.5s ease',
@@ -135,8 +148,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/dashboards'
-              style={activeItem === 'dashboards' ? activeLinkStyle : {}}
+              to='/projects'
+              style={activeItem === 'projects' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 {/* <img src={Profile} /> */}
@@ -150,8 +163,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/courses'
-              style={activeItem === 'courses' ? activeLinkStyle : {}}
+              to='/message'
+              style={activeItem === 'message' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <ChatOutlinedIcon
@@ -164,8 +177,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/teams'
-              style={activeItem === 'teams' ? activeLinkStyle : {}}
+              to='/profile'
+              style={activeItem === 'profile' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <AccountCircleOutlinedIcon
@@ -178,8 +191,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/meeting'
-              style={activeItem === 'meeting' ? activeLinkStyle : {}}
+              to='/support'
+              style={activeItem === 'support' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <ContactSupportOutlinedIcon
@@ -192,8 +205,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/students'
-              style={activeItem === 'students' ? activeLinkStyle : {}}
+              to='/earnings'
+              style={activeItem === 'earnings' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <MonetizationOnOutlinedIcon
@@ -206,8 +219,8 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/certificate'
-              style={activeItem === 'certificate' ? activeLinkStyle : {}}
+              to='/settings'
+              style={activeItem === 'settings' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <SettingsSuggestOutlinedIcon

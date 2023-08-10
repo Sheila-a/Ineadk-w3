@@ -1,38 +1,15 @@
-// import { checkMetaMaskAvailability } from '../../util/metamask';
-
-// const Signup = () => {
-//   const handleSignup = async () => {
-//     const isMetaMaskInstalled = await checkMetaMaskAvailability();
-//     if (isMetaMaskInstalled) {
-//       // Connect to the user's Ethereum wallet and perform signup logic
-//       // Example: Use ethers.js or web3.js to interact with Ethereum
-//     } else {
-//       alert('Please install MetaMask to continue.');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Signup</h2>
-//       {/* Your signup form here */}
-//       <button onClick={handleSignup}>Signup with MetaMask</button>
-//     </div>
-//   );
-// };
-
-// export default Signup;
-
-// FreelancerSignUp.jsx
 import { useState } from 'react';
+import { useRole } from '../../context/RoleContext';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 
 import design from './signup.module.css';
 
 const FreelancerSignUp = () => {
+  const { role } = useRole();
   const navigate = useNavigate();
-  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [fullName, setFullName] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSignUp = async () => {
@@ -40,7 +17,7 @@ const FreelancerSignUp = () => {
     // ...
 
     // After successful registration, redirect to the dashboard or another relevant page
-    navigate('/dashboard');
+    navigate(`/${role}dashboard`);
   };
 
   const handleGoBack = () => {

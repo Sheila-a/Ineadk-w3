@@ -3,7 +3,7 @@ import {
   useLocation,
   // useNavigate
 } from 'react-router-dom';
-import design from './dashboard.module.css';
+import design from './dashboard2.module.css';
 import MetaBtn from '../../../../components/Button/MetaBtn';
 import Sidebar from '../../../../layout/Sidebar/Sidebar';
 import DashCard from '../../../../components/DashCard/DashCard';
@@ -13,9 +13,8 @@ import rating from '../../../../assets/rating.png';
 import project from '../../../../assets/project.png';
 import client from '../../../../assets/client.png';
 import Deadline from '../../../../components/Deadline/Deadline';
-import DashNav from '../../../../components/DashNav/DashNav';
 
-const Dashboard = () => {
+const Dashboard2 = () => {
   //   const navigate = useNavigate();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -54,7 +53,6 @@ const Dashboard = () => {
       <div className={design.dashboard_body}>
         <Sidebar />
         <div className={design.dashboard_main}>
-          <DashNav title='HOME' />
           <div className={design.dash_intro}>
             <h3>Hello Deran</h3>
             <p>
@@ -119,4 +117,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Dashboard2;

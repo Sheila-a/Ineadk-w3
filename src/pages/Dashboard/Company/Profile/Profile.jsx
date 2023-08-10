@@ -1,7 +1,7 @@
 import Sidebar from '../../../../layout/Sidebar/Sidebar';
-import design from './project.module.css';
+import design from './profile.module.css';
 
-const Project = () => {
+const Profile = () => {
   return (
     <div className={design.projects}>
       <div className={design.project_body}>
@@ -12,4 +12,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Profile;

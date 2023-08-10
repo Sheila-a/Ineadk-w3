@@ -1,21 +1,23 @@
 // CompanySignUp.jsx
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useRole } from '../../context/RoleContext';
 import design from './signup.module.css';
 import MetaBtn from '../../components/Button/MetaBtn';
 
 const CompanySignUp = () => {
+  const { role } = useRole();
   const navigate = useNavigate();
-  const [companyName, setCompanyName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [companyName, setCompanyName] = useState('');
 
   const handleSignUp = async () => {
     // Perform validation on inputs and API call to register the company
     // ...
 
     // After successful registration, redirect to the dashboard or another relevant page
-    navigate('/dashboard');
+    navigate(`/${role}dashboard`);
   };
 
   const handleGoBack = () => {

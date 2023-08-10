@@ -1,11 +1,14 @@
 import { Link, useNavigate } from 'react-router-dom';
 import MetaBtn from '../../components/Button/MetaBtn';
+import { useRole } from '../../context/RoleContext';
 import design from './signup.module.css';
 
 const RoleSelection = () => {
   const navigate = useNavigate();
+  const { setRole } = useRole();
 
   const handleRoleSelection = (role) => {
+    setRole(role);
     if (role === 'freelancer') {
       navigate('/signup/freelancer');
     } else if (role === 'company') {

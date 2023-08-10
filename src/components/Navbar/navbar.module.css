@@ -66,8 +66,13 @@
   /* background: #987cb3; */
 }
 
+.input {
+  width: 250px;
+}
+
 .input::placeholder {
   color: #ffffff57;
+  font-size: 14px;
 }
 
 .dropdown {
@@ -140,5 +145,15 @@
 
   .SearchBar {
     margin-bottom: 10px;
+  }
+
+  .input {
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .input {
+    width: 150px;
   }
 }

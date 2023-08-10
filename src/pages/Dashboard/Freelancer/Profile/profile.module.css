@@ -4,8 +4,12 @@
 }
 
 .project_main {
-  padding: 50px 40px;
+  padding: 0px 0px 50px 0;
   flex-grow: 1;
   width: 80%;
   background: linear-gradient(to bottom right, #671ae4 20%, #181e41 90%);
+}
+
+.Profile_inner {
+  padding: 110px 40px 0 40px;
 }
