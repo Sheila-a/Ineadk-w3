@@ -50,15 +50,24 @@
   }
 
   .dashboard_main {
-    padding: 20px;
+    padding: 0px 0 20px 0px;
   }
 
   .dash_intro {
     padding: 20px;
+    margin: 0 20px;
   }
 
   .dash_intro h3 {
     font-size: 23px;
+  }
+
+  .dash_cards {
+    margin: 20px 20px 0 20px;
+  }
+
+  .dash_lower {
+    margin: 30px 20px 0 20px;
   }
 
   .dash_intro p {
