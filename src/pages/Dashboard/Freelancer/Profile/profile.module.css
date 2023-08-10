@@ -13,3 +13,9 @@
 .Profile_inner {
   padding: 110px 40px 0 40px;
 }
+
+@media (max-width: 1075px) {
+  .Profile_inner {
+    padding: 50px 10px 0 10px;
+  }
+}

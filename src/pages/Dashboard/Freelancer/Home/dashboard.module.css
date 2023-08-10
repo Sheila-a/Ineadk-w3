@@ -55,7 +55,7 @@
 
   .dash_intro {
     padding: 20px;
-    margin: 0 20px;
+    margin: 80px 10px 0 10px;
   }
 
   .dash_intro h3 {
@@ -63,11 +63,11 @@
   }
 
   .dash_cards {
-    margin: 20px 20px 0 20px;
+    margin: 20px 10px 0 10px;
   }
 
   .dash_lower {
-    margin: 30px 20px 0 20px;
+    margin: 30px 10px 0 10px;
   }
 
   .dash_intro p {
