@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
-import Sidebar from '../../../../layout/Sidebar/Sidebar';
 import MetaBtn from '../../../../components/Button/MetaBtn';
 import design from './message.module.css';
+import DashNav from '../../../../components/DashNav/DashNav';
+import Sidebar from '../../../../layout/Sidebar/ClientSidebar';
 
-const Message = () => {
+const Message2 = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const [selectedPerson, setSelectedPerson] = useState('');
@@ -84,6 +85,7 @@ const Message = () => {
       <div className={design.project_body}>
         <Sidebar />
         <div className={design.project_main}>
+          <DashNav title='MESSAGES' />
           <div>
             <h2>Talk to one of our talented IT Support staff</h2>
             <p>
@@ -146,4 +148,4 @@ const Message = () => {
   );
 };
 
-export default Message;
+export default Message2;

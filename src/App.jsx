@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams, useLocation } from 'react-router-dom';
 import { Landing } from './pages/Landing/Landing';
 import Login from './pages/Login/Login';
 import RoleSelection from './pages/Signup/RoleSelection';
@@ -15,34 +15,57 @@ import Earnings from './pages/Dashboard/Freelancer/Earnings/Earnings';
 import Settings from './pages/Dashboard/Freelancer/Settings/Settings';
 import SearchResults from './pages/Search/SearchResults';
 import { useRole } from './context/RoleContext';
-import Dashboard2 from './pages/Dashboard/Company/Home/Dashboard';
+import Dashboard2 from './pages/Dashboard/Company/Home/Dashboard2';
+import JobSearchResults from './pages/Search/JobSearchResults';
+import { useEffect } from 'react';
+import Jobs from './pages/Dashboard/Company/Jobs/Jobs';
+import FreelanceSearchResults from './pages/Search/FreelanceSearchResults';
+import Message2 from './pages/Dashboard/Company/Message/Message';
 
 function App() {
   const { role } = useRole();
+  const location = useLocation();
+  const searchQuery = new URLSearchParams(location.search).get('query');
+
   return (
     <>
       <Routes>
         <Route path='/' element={<Landing />} />
-        <Route
+        {/* <Route path='/search_results/:query' element={<JobSearchResults />} /> */}
+        {/* <Route
           path='/search_results/:category/:query'
           element={<SearchResults />}
-        />
+        /> */}
         <Route path='/login' element={<Login />} />
         <Route path='/role-selection' element={<RoleSelection />} />
         <Route path='/signup/freelancer' element={<FreelancerSignUp />} />
         <Route path='/signup/company' element={<CompanySignUp />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        {/* FREELANCER */}
+        <Route path='/freelancer/dashboard' element={<Dashboard />} />
 
         {/* <Route
           path={`/${role}dashboard`} // Renders the appropriate dashboard based on the role
           element={role === 'freelancer' ? <Dashboard /> : <Dashboard2 />}
         /> */}
-        <Route path='/projects' element={<Project />} />
-        <Route path='/message' element={<Message />} />
-        <Route path='/profile' element={<Profile />} />
-        <Route path='/support' element={<Support />} />
+        <Route path='/projects' element={<Project />}></Route>
+        <Route
+          path='/search/jobs'
+          element={<JobSearchResults searchQuery={searchQuery} />}
+        />
+        <Route
+          path='/search/freelancers'
+          element={<FreelanceSearchResults searchQuery={searchQuery} />}
+        />
+        <Route path='/freelancer/message' element={<Message />} />
+        <Route path='/freelancer/profile' element={<Profile />} />
+        <Route path='/freelancer/support' element={<Support />} />
         <Route path='/earnings' element={<Earnings />} />
-        <Route path='/settings' element={<Settings />} />
+        <Route path='/freelancer/settings' element={<Settings />} />
+
+        {/* CLIENT */}
+        <Route path='/client/dashboard' element={<Dashboard2 />} />
+        <Route path='/jobs' element={<Jobs />} />
+        <Route path='/client/message' element={<Message2 />} />
       </Routes>
       <Footer />
     </>

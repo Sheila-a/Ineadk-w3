@@ -15,21 +15,37 @@ const SearchResultsRow = ({
   jobTitle,
   duration,
   offering,
+  signature,
+  rating,
 }) => {
   return (
     <div className={design.Search_row} onClick={onClick}>
-      <img src={img} />
       <div>
-        <h2>{name}</h2>
-        <p>{email}</p>
-        <p>{role}</p>
-        <p>{number}</p>
-        <p>${billing}</p>
-        <p>{companyName}</p>
-        <p>{companyEmail}</p>
-        <p>{jobTitle}</p>
-        <p>{duration}</p>
-        <p>${offering}</p>
+        {signature === 'freelance' ? (
+          <div className={design.FreeRow}>
+            <img src={img} />
+            <div>
+              <h2>{name}</h2>
+              <p>{email}</p>
+              <p>{role}</p>
+              <p>{number}</p>
+              <p>{rating}</p>
+              <p>${billing}</p>
+            </div>
+          </div>
+        ) : signature === 'jobs' ? (
+          <>
+            <h2>{companyName}</h2>
+            <p>{companyEmail}</p>
+            <p>{jobTitle}</p>
+            <p>{duration}</p>
+            <p>${offering}</p>
+          </>
+        ) : (
+          <>
+            <h2>No result found</h2>
+          </>
+        )}
       </div>
     </div>
   );
@@ -37,16 +53,18 @@ const SearchResultsRow = ({
 
 SearchResultsRow.propTypes = {
   name: PropTypes.string,
+  rating: PropTypes.number,
+  signature: PropTypes.string,
   email: PropTypes.string,
-  billing: PropTypes.string,
+  billing: PropTypes.number,
   number: PropTypes.object,
   img: PropTypes.object,
-  role: PropTypes.object,
-  companyName: PropTypes.object,
-  companyEmail: PropTypes.object,
-  jobTitle: PropTypes.object,
-  duration: PropTypes.object,
-  offering: PropTypes.object,
+  role: PropTypes.string,
+  companyName: PropTypes.string,
+  companyEmail: PropTypes.string,
+  jobTitle: PropTypes.string,
+  duration: PropTypes.number,
+  offering: PropTypes.number,
   onClick: PropTypes.func,
 };
 

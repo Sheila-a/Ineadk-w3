@@ -22,7 +22,7 @@ const Login = () => {
         if (accounts.length > 0) {
           setIsMetaMaskInstalled(true);
 
-          navigate(`/${role}dashboard?address=${accounts[0]}`);
+          navigate(`/${role}/dashboard?address=${accounts[0]}`);
         } else {
           alert('Please connect MetaMask to continue.');
         }

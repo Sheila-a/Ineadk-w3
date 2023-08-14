@@ -1,11 +1,15 @@
 .Search_row {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background: #695a8157;
+  background: #ff99009d;
+  /* background: #695a8157; */
   margin: 10px 0;
   border-radius: 7px;
   padding: 20px;
+}
+
+.FreeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .Search_row img {
@@ -14,8 +18,13 @@
 }
 
 .Search_results {
-  padding: 200px 7vw 0 7vw;
+  padding: 150px 7vw 0 7vw;
   color: #e6e6eb;
+  /* color: #fff; */
+}
+
+.Search_results span {
+  color: #ff9800;
 }
 
 .Search_row:hover {
@@ -24,4 +33,15 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.4s ease;
   color: #181e41;
+}
+
+.flexa {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.flexa:hover {
+  color: #ff9800;
 }

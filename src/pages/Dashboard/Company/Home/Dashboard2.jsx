@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import design from './dashboard2.module.css';
 import MetaBtn from '../../../../components/Button/MetaBtn';
-import Sidebar from '../../../../layout/Sidebar/Sidebar';
+import Sidebar from '../../../../layout/Sidebar/ClientSidebar';
 import DashCard from '../../../../components/DashCard/DashCard';
 import dols from '../../../../assets/dollar.png';
 import success from '../../../../assets/activity.png';
@@ -13,6 +13,9 @@ import rating from '../../../../assets/rating.png';
 import project from '../../../../assets/project.png';
 import client from '../../../../assets/client.png';
 import Deadline from '../../../../components/Deadline/Deadline';
+import DashNav from '../../../../components/DashNav/DashNav';
+import Search from '../../../../components/Search/Search';
+import DashIntro from '../../../../components/DashIntro/DashIntro';
 
 const Dashboard2 = () => {
   //   const navigate = useNavigate();
@@ -53,28 +56,22 @@ const Dashboard2 = () => {
       <div className={design.dashboard_body}>
         <Sidebar />
         <div className={design.dashboard_main}>
-          <div className={design.dash_intro}>
-            <h3>Hello Deran</h3>
-            <p>
-              Welcome! Find everything you need to manage your freelance career
-              and stay organized. Check out your latest projects, connect with
-              clients, and keep track of your earnings all in one place. We're
-              thrilled to have you on board. Let's make every gig a success
-              together!
-            </p>
-            <MetaBtn content='New Proposal' />
-          </div>
+          <DashNav title='HOME' />
+          <Search placeholder='Search for freelancers...' path='freelancers' />
+          <DashIntro
+            title='Hello Stacey'
+            text=' Welcome to GIGNexus! Your hub for seamless project management and
+          collaboration. Explore your ongoing projects, connect with talented
+          freelancers, and effortlessly track your project progress and
+          payments. We are excited to partner with you in making every project a
+          triumph. Lets work together to achieve your goals!'
+            btn='New Proposal'
+          />
+
           <div className={design.dash_cards}>
             <DashCard
-              value='Total earnings'
-              title='USD'
-              number='0'
-              icons={dols}
-              className={design.crd_1}
-            />
-            <DashCard
-              value='Completed projects'
-              title='Projects'
+              value='Jobs complete'
+              title='Jobs'
               number='0'
               icons={success}
               className={design.crd_1}
@@ -87,8 +84,8 @@ const Dashboard2 = () => {
               className={design.crd_1}
             />
             <DashCard
-              value='Ongoing projects'
-              title='Projects'
+              value='Ongoing jobs'
+              title='Jobs'
               number='0'
               icons={project}
               className={design.crd_1}
@@ -101,10 +98,7 @@ const Dashboard2 = () => {
               className={design.crd_1}
             />
           </div>
-          <div className={design.dash_lower}>
-            <Deadline />
-            sfvsv
-          </div>
+          <div className={design.dash_lower}>sfvsv</div>
           {/* <h1>Welcome to Your Dashboard</h1>
           <p>Your connected wallet address: {userAddress}</p>
           <MetaBtn

@@ -2,7 +2,7 @@ import DashNav from '../../../../components/DashNav/DashNav';
 import ProfileCard from '../../../../components/ProfileCard/ProfileCard';
 import ProfileContact from '../../../../components/ProfileContact/ProfileContact';
 import ProfileData from '../../../../components/ProfileData/ProfileData';
-import Sidebar from '../../../../layout/Sidebar/Sidebar';
+import Sidebar from '../../../../layout/Sidebar/FreeSidebar';
 import design from './profile.module.css';
 
 const Profile = () => {

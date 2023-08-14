@@ -48,27 +48,30 @@ const SearchResults = () => {
           Search Results for {category}: {query}
         </h2>
         <div>
-          {searchType === 'freelancers'
-            ? freelancerResults.map((result) => (
-                <SearchResultsRow
-                  key={result.id}
-                  img={result.profilePicture}
-                  name={`${result.firstName} ${result.lastName}`}
-                  number={result.phoneNumber}
-                  email={result.email}
-                  billing={result.Billing}
-                />
-              ))
-            : jobResults.map((result) => (
-                <SearchResultsRow
-                  key={result.id}
-                  companyEmail={result.companyEmail}
-                  companyName={result.companyName}
-                  jobTitle={result.jobTitle}
-                  duration={result.duration}
-                  offering={result.offering}
-                />
-              ))}
+          {
+            // searchType === 'freelancers'
+            //     ?
+            freelancerResults.map((result) => (
+              <SearchResultsRow
+                key={result.id}
+                img={result.profilePicture}
+                name={`${result.firstName} ${result.lastName}`}
+                number={result.phoneNumber}
+                email={result.email}
+                billing={result.Billing}
+              />
+            ))
+            //        {/* : jobResults.map((result) => (
+            //         <SearchResultsRow
+            //            key={result.id}
+            //            companyEmail={result.companyEmail}
+            //             companyName={result.companyName}
+            //              jobTitle={result.jobTitle}
+            //              duration={result.duration}
+            //            offering={result.offering}
+            //            /> */}
+            //  ))
+          }
         </div>
       </div>
     </div>

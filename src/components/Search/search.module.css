@@ -1,0 +1,51 @@
+.dropdown,
+.input {
+  font-size: 16px;
+  /* background: #b75cff; */
+  background: transparent;
+  border: none;
+  color: #fff;
+  /* padding: 8px; */
+  outline: none;
+}
+
+.dropdown > option {
+  color: #671ae4;
+  cursor: pointer;
+  /* background: #987cb3; */
+}
+
+.input {
+  width: 250px;
+}
+
+.input::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.dropdown {
+  border-left: 1px solid #ffffff8e;
+  /* padding-left: 7px; */
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+  padding-left: 5px;
+}
+
+.SearchBar {
+  display: flex;
+  background: #ffffff67;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 20px 40px 0 40px;
+}
+
+.input {
+  flex: 1;
+}

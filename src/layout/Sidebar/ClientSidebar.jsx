@@ -56,18 +56,18 @@ const Sidebar = () => {
 
   // update activeItem based on current location
   useEffect(() => {
-    if (location.pathname === '/dashboard') {
+    if (location.pathname === '/client/dashboard') {
       setActiveItem('dashboard');
-    } else if (location.pathname === '/projects') {
-      setActiveItem('projects');
-    } else if (location.pathname === '/message') {
+    } else if (location.pathname === '/jobs') {
+      setActiveItem('jobs');
+    } else if (location.pathname === '/client/message') {
       setActiveItem('message');
     } else if (location.pathname === '/profile') {
       setActiveItem('profile');
     } else if (location.pathname === '/support') {
       setActiveItem('support');
-    } else if (location.pathname === '/earnings') {
-      setActiveItem('earnings');
+    } else if (location.pathname === '/payments') {
+      setActiveItem('payments');
     } else if (location.pathname === '/settings') {
       setActiveItem('settings');
     }
@@ -132,7 +132,7 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/dashboard'
+              to='/client/dashboard'
               style={activeItem === 'dashboard' ? activeLinkStyle : {}}
             >
               {' '}
@@ -148,22 +148,22 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/projects'
-              style={activeItem === 'projects' ? activeLinkStyle : {}}
+              to='/jobs'
+              style={activeItem === 'jobs' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 {/* <img src={Profile} /> */}
                 <AccountTreeOutlinedIcon
                   style={{ fontSize: isMobileView ? '40px' : '24px' }}
                 />
-                {isExpanded && <h3>Projects</h3>}
+                {isExpanded && <h3>My Jobs</h3>}
               </div>
             </Link>
           </div>
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/message'
+              to='/client/message'
               style={activeItem === 'message' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
@@ -177,7 +177,7 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/profile'
+              to='/client/profile'
               style={activeItem === 'profile' ? activeLinkStyle : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
@@ -191,7 +191,7 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/support'
+              to='/client/support'
               style={activeItem === 'support' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
@@ -205,21 +205,21 @@ const Sidebar = () => {
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/earnings'
-              style={activeItem === 'earnings' ? activeLinkStyle2 : {}}
+              to='/payments'
+              style={activeItem === 'payments' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>
                 <MonetizationOnOutlinedIcon
                   style={{ fontSize: isMobileView ? '40px' : '24px' }}
                 />
-                {isExpanded && <h3>Earnings</h3>}
+                {isExpanded && <h3>Payments</h3>}
               </div>{' '}
             </Link>
           </div>
           <div>
             <Link
               className={design.Sidebar_tabs}
-              to='/settings'
+              to='/client/settings'
               style={activeItem === 'settings' ? activeLinkStyle2 : {}}
             >
               <div className={design.Sidebar_tabs_inner}>

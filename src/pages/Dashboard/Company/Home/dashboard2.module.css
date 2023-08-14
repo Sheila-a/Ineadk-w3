@@ -4,7 +4,8 @@
 }
 
 .dashboard_main {
-  padding: 50px 40px;
+  padding: 0px 0 50px 0px;
+  /* padding: 50px 40px; */
   flex-grow: 1;
   width: 80%;
   background: linear-gradient(to bottom right, #671ae4 20%, #181e41 90%);
@@ -24,7 +25,7 @@
 .dash_cards {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 40px 0 40px;
   gap: 10px;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .dash_lower {
-  margin-top: 30px;
+  margin: 30px 40px 0 40px;
   display: flex;
   gap: 20px;
 }

@@ -1,14 +1,21 @@
 import { useState, useRef, useEffect } from 'react';
-import Sidebar from '../../../../layout/Sidebar/Sidebar';
+import Sidebar from '../../../../layout/Sidebar/FreeSidebar';
 import MetaBtn from '../../../../components/Button/MetaBtn';
 import design from './message.module.css';
 import DashNav from '../../../../components/DashNav/DashNav';
+import DashIntro from '../../../../components/DashIntro/DashIntro';
 
 const Message = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const [selectedPerson, setSelectedPerson] = useState('');
   const chatContainerRef = useRef(null);
+  const inputRef = useRef(null);
+
+  const handleStartTyping = () => {
+    // Focus on the input field when DashIntro is clicked
+    inputRef.current.focus();
+  };
 
   const getGreeting = () => {
     const currentHour = new Date().getHours();
@@ -34,6 +41,10 @@ const Message = () => {
       return `${greeting}, let me know what you need help with, and I'll provide the information you're looking for.`;
     } else if (lowerCaseInput.includes('bye')) {
       return 'Goodbye! Have a great day!';
+    } else if (lowerCaseInput.includes('lol')) {
+      return 'Haha, what is funny friend?';
+    } else if (lowerCaseInput.includes('no')) {
+      return 'Alright. Do have a good day';
     } else if (lowerCaseInput.includes('hoe')) {
       return "I'm sorry, but I can't assist with that. Please check the sidebar for more information.";
     } else if (lowerCaseInput.includes('set')) {
@@ -87,12 +98,12 @@ const Message = () => {
         <div className={design.project_main}>
           <DashNav title='MESSAGES' />
           <div className={design.Message_inner}>
-            <div>
-              <h2>Talk to one of our talented IT Support staff</h2>
-              <p>
-                You can decide to talk to a company representative online or to{' '}
-              </p>
-            </div>
+            <DashIntro
+              title='Talk to one of our talented IT Support staff'
+              text='Welcome to our interactive support chat. Whether you are facing technical challenges, need guidance, or simply have questions, our dedicated IT Support team is here to assist you. Initiate a conversation and tap into the expertise of our professionals. Do not hesitate to reach out – we are just a message away!'
+              btn='Send Message'
+              onClick={handleStartTyping}
+            />
             <div
               className={design.chat_container}
               //   style={showChatContainer()}
@@ -107,9 +118,7 @@ const Message = () => {
                         : design.bot_message
                     }`}
                   >
-                    {/* <div className='message-content>*/}
                     {message.text}
-                    {/* </div> */}
                   </div>
                 ))}
               </div>
@@ -124,6 +133,7 @@ const Message = () => {
                     }
                   }}
                   className={design.input}
+                  ref={inputRef}
                   placeholder='Type your message...'
                 />
 

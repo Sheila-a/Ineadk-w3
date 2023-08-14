@@ -1,4 +1,4 @@
-import Sidebar from '../../../../layout/Sidebar/Sidebar';
+import Sidebar from '../../../../layout/Sidebar/FreeSidebar';
 import design from './settings.module.css';
 
 const Settings = () => {
